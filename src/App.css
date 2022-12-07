@@ -1,7 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 .app {
@@ -13,10 +12,10 @@
 }
 
 .board {
-	display: flex;
-	flex-wrap: wrap;
 	width: calc(64px * 8);
 	height: calc(64px * 8);
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .cell {
@@ -39,4 +38,22 @@
 
 .white {
 	background-color: #eed4ac;
+}
+
+.selected {
+	background-color: brown;
+}
+
+.available {
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #22c022;
+}
+
+.lost {
+	height: calc(50vh - 60px);
+	padding: 30px;
+	margin-left: 50px;
+	background-color: lightgray;
 }
