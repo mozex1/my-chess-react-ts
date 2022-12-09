@@ -17,7 +17,7 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard }) => {
 			setSelectedCell(null);
 		  } else {
 			setSelectedCell(cell);
-		  }
+		  };
 	};
 
 	useEffect(() => {
