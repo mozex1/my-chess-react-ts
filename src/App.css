@@ -16,6 +16,9 @@
 	height: calc(64px * 8);
 	display: flex;
 	flex-wrap: wrap;
+	border: 40px solid rgb(142, 80, 30);
+	margin: 20px;
+
 }
 
 .cell {
@@ -33,11 +36,11 @@
 }
 
 .black {
-	background-color: deepskyblue;
+	background-color: rgba(53, 20, 6, 0.8);
 }
 
 .white {
-	background-color: #eed4ac;
+	background-color: rgb(214, 154, 94);
 }
 
 .selected {
@@ -45,15 +48,35 @@
 }
 
 .available {
-	height: 12px;
-	width: 12px;
+	height: 20px;
+	width: 20px;
 	border-radius: 50%;
-	background-color: #22c022;
+	border: 5px solid #5dda5d;
 }
 
 .lost {
-	height: calc(50vh - 60px);
+	/* height: calc(50vh - 120px); */
+	height: 38vh;
 	padding: 30px;
 	margin-left: 50px;
-	background-color: lightgray;
+	border: 5px solid rgba(142, 80, 30, .5);
+	;
+	background-color: rgba(142, 80, 30, .3);
+}
+
+.btn-restart {
+	height: 3vh;
+	width: 5vw;
+	border: none;
+	background-color: rgba(93, 218, 93, .5);
+	;
+	margin-bottom: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn-restart:active {
+	background-color: #5dda5d;
+	transform: scale(1.1)
 }
