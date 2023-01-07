@@ -1,5 +1,5 @@
 import { Colors } from "./Colors";
-import { Figure } from "./figures/Figure";
+import { Figure, FigureNames } from "./figures/Figure";
 import { Board } from "./Board";
 
 export class Cell {
@@ -62,6 +62,7 @@ export class Cell {
     isEmptyDiagonal(target: Cell): boolean {
         const absX = Math.abs(target.x - this.x);
         const absY = Math.abs(target.y - this.y);
+        
         if(absY !== absX) return false;
 
         const dy = this.y < target.y ? 1 : -1;
@@ -85,8 +86,11 @@ export class Cell {
 
     moveFigure(target: Cell) {
         if(this.figure && this.figure?.canMove(target)) {
-            this.figure?.movieFigure(target);
+            this.figure.movieFigure(target);
             if(target.figure) {
+                // if (target.figure.name === FigureNames.KING) {
+
+                // }
                 this.addLostFigure(target.figure);
             };
             target.setFigure(this.figure);

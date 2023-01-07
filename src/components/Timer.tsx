@@ -41,6 +41,7 @@ const Timer: FC<TimerProps> = ({currentPlayer, restart}) => {
         restart();
     };
 
+
     return (
         <div>
             <div>
