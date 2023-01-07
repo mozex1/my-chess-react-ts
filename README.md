@@ -1,2 +1,2 @@
 # Chess with React and TS. OOP.
-<img src="https://ibb.co/rQ4sKfF" alt="chess"/>
+<img src="https://i.ibb.co/yNWSmBd/chess.png" alt="chess" border="0">
